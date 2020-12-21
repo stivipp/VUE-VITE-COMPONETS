@@ -13,3 +13,13 @@ export default {
   }
 }
 </script>
+
+<style>
+  img {
+    width: 30%;
+    padding: 6rem;
+    box-shadow: 0 0 10px black; 
+    background: 	#5189ff;
+  }
+
+</style>
