@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <h1>Hello World</h1>
 </template>
 
 <script>
@@ -14,7 +15,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped >
   img {
     width: 30%;
     padding: 6rem;
