@@ -1,7 +1,7 @@
 <template>
 
     <form @submit.prevent="formSubmitted" class="add-new">
-        <input @input="valueChanged" type="text" />
+        <input @input="valueChanged" v-model="newName" type="text" />
     </form>
 
 </template>
@@ -10,10 +10,10 @@
     export default {
         methods: {
             formSubmitted() {
-                alert('FORM SUBMITTED!! BRO xD')
+                this.$emit('add-dude', this.newName)
             },
             valueChanged(e) {
-                console.log(e.target.value)
+               this.$emit('new-preview', this.newName)
             },
         },
     }

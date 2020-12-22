@@ -1,18 +1,25 @@
 <template>
+        <main class="min-h-screen flex items-start bg-gradient-to-b from-myBlue-100 to-myWhite-100">
+            <div class="max-w-8xl mx-auto p-8">
 
-    <ul>
-        <li v-for="(dude, index) in characters" :key="index">
-            <Dude :name="dude" title="hello FREMENS :D" />
-        </li>
-    </ul>
+                <ul class="font-mono text-lg">
+                    <li v-for="(dude, index) in characters" :key="index">
+                        <Dude :name="dude" title="hello FREMENS :D" />
+                    </li>
+                </ul>
+       
 
-    <create-dude-form /> 
+                <create-dude-form 
+                    @new-preview="newDude = $event"
+                    @add-dude="characters.push($event)"
+                /> 
 
-    <p>
-        {{ newDude }}
-    </p>
-    
+                <p>
+                    {{ newDude }}
+                </p>
 
+            </div>
+        </main>
 </template>
 
 
