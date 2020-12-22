@@ -1,5 +1,6 @@
 ul {
     list-style-type: none;
+    text-align: center;
 }
 
 ul,li {
@@ -12,4 +13,9 @@ body {
     background: #a3b7ff;
     margin: 5rem;
     padding: 5rem;
+}
+
+input {
+    border: 0;
+   
 }
