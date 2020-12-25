@@ -14,9 +14,7 @@
                     @add-dude="characters.push($event)"
                 /> 
 
-                <p>
-                    {{ newDude }}
-                </p>
+                <preview-dude />
 
             </div>
         </main>
@@ -27,12 +25,15 @@
 <script>
     import Dude from "./components/Dude.vue"
     import CreateDudeForm from "./components/CreateDudeForm.vue"
+    import PreviewDude from "./components/PreviewDude.vue"
+
 
 
     export default {
         components: {
             Dude,
-            CreateDudeForm
+            CreateDudeForm,
+            PreviewDude
         },
         data() {
             return {

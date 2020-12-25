@@ -3,11 +3,5 @@
 @tailwind utilities;
 
 @layer utilities {
-    .myBlue {
-        background: #5189ff;
-    }
-
-    .myWhite {
-        background: #ffffff;
-    }
+  
 }

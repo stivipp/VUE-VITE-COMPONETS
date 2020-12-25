@@ -11,9 +11,12 @@
         methods: {
             formSubmitted() {
                 this.$emit('add-dude', this.newName)
+                this.newName = ''
+                window.eventBus.emit('new-preview', '')
+
             },
             valueChanged(e) {
-               this.$emit('new-preview', this.newName)
+               window.eventBus.emit('new-preview', this.newName)
             },
         },
     }

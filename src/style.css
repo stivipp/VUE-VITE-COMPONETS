@@ -31520,14 +31520,6 @@ video {
           animation: bounce 1s infinite;
 }
 
-.myBlue {
-  background: #5189ff;
-}
-
-.myWhite {
-  background: #ffffff;
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
